@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+}
+
+.header{
+    background-color: rgb(126, 115, 115);
+    .header-logo{
+        img{
+            height: 60px;
+            padding: 5px;
+
+        }
+    }
+    .header-nav{
+        float:right;
+        border: 1px solid white;
+        text-align: center;
+        font-family: Roboto, arial;
+        text-transform: uppercase;
+        ul{
+            list-style: none;
+            li{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 10px;
+                margin: 10px;
+                
+            }
+        }
+
+    }
+}
