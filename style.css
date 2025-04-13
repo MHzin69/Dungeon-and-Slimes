@@ -53,7 +53,7 @@ body {
                 transition: all 0.3s;
             }
             .btn {
-                color: rgb(163, 157, 157);
+                color: rgb(189, 187, 187);
                 text-decoration: none;
                 font-style: bold;
             }
@@ -78,25 +78,24 @@ body {
 }
 
 .btn{
-    background-color: rgb(131, 0, 0);
+    background-color: rgb(180, 2, 2);
     padding: 8px 20px;
-    border:  1px solid rgb(148, 144, 144);
+    border:  2px solid rgb(189, 187, 187);
     border-radius: 10px ;
     transition: all 0.3s;
-    color: rgb(163, 157, 157);
+    color: rgb(189, 187, 187);
     text-decoration: none;
     font-style: bold;
 }
 .btn:hover{
     background-color: rgb(218, 0, 0);
     padding: 8px 20px;
-    border:  1px solid white;
+    border:  2px solid white;
     border-radius: 10px ;
     color: white;
 }
 
 .sobre{
-    background-color: rgb(124, 120, 120);
     margin: 0 30px;
     padding: 20px;
     .titulo{
@@ -115,4 +114,37 @@ body {
         text-align: center;
     }
 
+}
+.imagens{
+   .titulo{
+    color: white;
+    text-align: center;
+    font-style: bold;
+    padding: 15px;
+   }
+   .grid3{
+    display: flex;
+    
+    .col{
+        width: 33%;
+        margin: 5px;
+        box-shadow: 0 0 10px black;
+        border-radius: 6px;
+        border: solid 2px white;
+        img{
+            width: 100%;
+            border-radius: 6px;
+        }
+    }
+   }
+}
+
+.button{
+    margin: 20px;
+    text-align: center;
+}
+
+hr{
+    box-shadow: 2px 0 3px black;
+    width: 100%;
 }
