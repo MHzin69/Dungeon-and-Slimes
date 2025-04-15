@@ -41,7 +41,7 @@
                         <a href="imagens.html" title="Imagens">Imagens</a>
                     </li>
                     <li>
-                        <a href="#" title="Contato">Contato</a>
+                        <a href="contato.html" title="Contato">Contato</a>
                     </li>
                     <li>
                         <a class="btn" href="#" title="Play">
@@ -112,7 +112,9 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 <script>
     $(document).ready(function() {
-        AOS.init();  
+        AOS.init({
+            startEvent: 'DOMContentLoaded'
+        });  
     });
 </script>
 

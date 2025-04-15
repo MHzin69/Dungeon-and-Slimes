@@ -179,7 +179,7 @@ hr{
     text-align: center;
     color: white;
     font-size: 15px;
-    padding: 20px;
+    padding: 8px;
     img{
         height: 90px;
         padding: 30px;
@@ -199,3 +199,26 @@ hr{
     scroll-margin-top: 80px;
 }
 
+
+
+.forms{
+    padding: 100px 0;
+    h2{
+        text-align: center;
+    }
+#form1{
+    label{
+        font-family:Roboto;
+        width: 100%;
+        font-size: 15px;
+    }
+    .form{
+        font-family: Roboto;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+}
