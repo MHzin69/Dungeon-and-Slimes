@@ -14,7 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
+    <style>
+        .imagens{
+            padding-top: 80px;
+        }
+    </style>
 </head>
 
 <body>
@@ -49,37 +53,13 @@
             </nav>
         </div>
     </header>
-    <Main class="main">
-        <section class="bannerS">
-            <div class="container">
-                <div class="banner">
-                    <img src="imagens/ChatGPT Image 12 de abr. de 2025, 19_44_31.png" alt="banner" title="banner">
-                </div>
-            </div>
-        </section>
+    
 
-        <section class="sobre">
-            <div class="container">
-                <div class="Sobreojogo">
-                    <h2 class="titulo" >Sobre o Dungeons and Slimes</h2>
-                    <p>Em <span>Dungeons and Slimes</span> assuma o controle de um ninja misterioso em uma jornada
-                        pixelada por masmorras perigosas. Enfrente inimigos, desvie de armadilhas e lute para escapar da
-                        dungeon onde tudo começou.
-                    </p>
-                </div>
-                <div class="button">
-                    <a href="sobre.html" title="Sobre o jogo" class="btn" >
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Saiba Mais
-                    </a>
-                </div>
-                <hr>
-            </div>
-        </section>
+        
         <section class="imagens">
             <div class="container">
                 <div class="titulo">
-                    <h2>Algumas Imagens do Game</h2>
+                    <h2>Galeria de Imagens do Game</h2>
                 </div>
                 <div class="grid3" >
                     <div class="col" data-aos="fade-up">
@@ -91,33 +71,28 @@
                     <div class="col" data-aos="fade-up">
                         <img src="imagens/Captura de tela 2025-04-13 134304.png" alt="Imagem03" title="Imagem03">
                     </div>
-                </div>
-                <div class="button">
-                    <a href="#" class="btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Ver mais
-                    </a>
-                </div>
-                <hr>
-            </div>
-        </section>
-        <section class="criador">
-            <div class="container">
-                <div class="sobremim">
-                    <h2 class="titulo">Um pouco sobre o criador</h2>
-                    <p>Murilo Henrique Batista, de 17 anos, nascido em Iretama–PR e atualmente cursa Tecnologia em Análise e Desenvolvimento de Sistemas. Apaixonado por tecnologia, games e criação digital, decidiu unir tudo isso em um projeto próprio: Dungeons and Slimes, um jogo criado do zero com muito empenho e criatividade.
-
-                        Dungeons and Slimes é mais do que um projeto pessoal — é a realização de um sonho e o primeiro passo de uma jornada promissora no universo dos games. Nesta página, você vai conhecer mais sobre sua trajetória, suas inspirações e como esse jogo foi desenvolvido do zero.</p>
-                </div>
-                <div class="button">
-                    <a href="sobre.html" class="btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Ver mais
-                    </a>
+                    <div class="col" data-aos="fade-up">
+                        <img src="imagens/Captura de tela 2025-04-15 141116.png" alt="Imagem04" title="Imagem04">
+                    </div>
+                    <div class="col" data-aos="fade-up">
+                        <img src="imagens/Captura de tela 2025-04-13 134214.png" alt="Imagem05" title="Imagem05">
+                    </div>
+                    <div class="col" data-aos="fade-up">
+                        <img src="imagens/Captura de tela 2025-04-13 134249.png" alt="Imagem06" title="Imagem06">
+                    </div>
+                    <div class="col" data-aos="fade-up">
+                        <img src="imagens/Captura de tela 2025-04-13 134042.png" alt="Imagem07" title="Imagem07">
+                    </div>
+                    <div class="col" data-aos="fade-up">
+                        <img src="imagens/Captura de tela 2025-04-15 140853.png" alt="Imagem08" title="Imagem08">
+                    </div>
+                    <div class="col" data-aos="fade-up">
+                        <img src="imagens/Captura de tela 2025-04-15 140834.png" alt="Imagem09" title="Imagem09">
+                    </div>
                 </div>
                 <hr>
             </div>
-        </section>
+        
     </Main>
     <footer class="footer">
         <img src="imagens/ChatGPT Image 12 de abr. de 2025, 15_46_13.png" alt="logo">
@@ -137,7 +112,9 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 <script>
     $(document).ready(function() {
-        AOS.init({delay: 0,});  
+        AOS.init({
+            startEvent: 'DOMContentLoaded'
+        });  
     });
 </script>
 
