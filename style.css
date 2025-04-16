@@ -307,6 +307,9 @@ hr {
     .btn {
         padding: 5px 10px;
         font-size: 14px;
+        background-color: rgb(218, 0, 0);
+        color: #fff;
+        border: 2px solid white;
     }
 
     .imagens {
