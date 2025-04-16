@@ -15,7 +15,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
-        section{
+        .imagens{
             padding-top: 80px;
         }
     </style>
@@ -41,7 +41,7 @@
                         <a href="imagens.html" title="Imagens">Imagens</a>
                     </li>
                     <li>
-                        <a href="#" title="Contato">Contato</a>
+                        <a href="contato.html" title="Contato">Contato</a>
                     </li>
                     <li>
                         <a class="btn" href="jogo.html" title="Play">
@@ -54,27 +54,16 @@
         </div>
     </header>
     
-    <section class="forms">
+    <section class="game">
         <div class="container">
-            <h2>Entre em contato</h2>
-        <form name="form1" id="form1" method="get" action="https://professorburnes.com.br/teste-form.php">
-            <label for="nome">Coloque seu nome</label>
-            <input type="text" name="nome" id=nome class="form">
-
-            <label for="email">Coloque seu e-mail</label>
-            <input type="email" name="email" id="email" class="form">
-
-            <label for="mensagem">Sua mensagem</label>
-            <textarea rows="5" name="mensagem" id="mensagem" class="form"></textarea>
-
-            <button type="button" id="botao" class="btn">
-                <i class="fas fa-check"></i>
-                Enviar Mensagem
-            </button>
-        </form>
+            <div class="jogo">
+                <iframe src="Dungeon and Slimes jogo/index.html" frameborder="" width="1000px" height="600px" ></iframe>
+            </div>
         </div>
-    </section>    
-
+    </section>
+        
+        
+        
     </Main>
     <footer class="footer">
         <img src="imagens/ChatGPT Image 12 de abr. de 2025, 15_46_13.png" alt="logo">
@@ -89,46 +78,15 @@
         </p>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 <script>
-    document.getElementById('botao').onclick= function(){
-        var nome = document.getElementById('nome').value;
-        var email = document.getElementById('email').value;
-        var mensagem = document.getElementById('mensagem').value;
-
-        if(nome == "" && email == "" && mensagem == "") {
-            alert("Por favor, preencha todos os campos");
-        } else{
-            
-            if(nome == ""){
-                alert("Informe o nome");
-                return;
-            }
-
-            if(email == ""){
-                alert("Informe o email");
-                return;
-            }
-
-            if(!emailValido(email)){
-                alert("O email não é válido");
-                return;
-            }
-
-            if(mensagem == ""){
-                alert("Escreva sua mensagem");
-                return;
-            }
-        }
-
-        if(nome != "" && email != "" && mensagem != ""){
-            alert("O formulário foi enviado com sucesso!")
-        }
-
-        function emailValido(email) {
-             return email.includes("@");
-        }
-
-    }
+    $(document).ready(function() {
+        AOS.init({
+            startEvent: 'DOMContentLoaded'
+        });  
+    });
 </script>
 
 </body>

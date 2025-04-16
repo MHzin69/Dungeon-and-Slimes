@@ -222,3 +222,14 @@ hr{
     }
 }
 }
+
+.game{
+    .jogo{
+        iframe{
+            padding: 90px 0;
+            width: 100%;
+
+        }
+
+    }
+}
