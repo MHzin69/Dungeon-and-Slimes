@@ -52,6 +52,11 @@
                 </ul>
             </nav>
         </div>
+        <div class="menu">
+            <a href="javascript:mostrarmenu()" title="Menu" class="botao-menu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
     </header>
     
 
@@ -116,6 +121,12 @@
             startEvent: 'DOMContentLoaded'
         });  
     });
+</script>
+<script>
+    function mostrarmenu() {
+        // Alterna a exibição do menu de navegação
+        $("nav").slideToggle(); // Usa animação para exibir/ocultar
+    }
 </script>
 
 </body>
