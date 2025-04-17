@@ -1392,7 +1392,8 @@ self.C3_ExpressionFuncs = [
 		() => "menu",
 		() => -15,
 		() => "gameover",
-		() => "musicago"
+		() => "musicago",
+		() => 10
 ];
 
 
