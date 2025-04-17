@@ -124,10 +124,29 @@
 </script>
 <script>
     function mostrarmenu() {
-        // Alterna a exibição do menu de navegação
-        $("nav").slideToggle(); // Usa animação para exibir/ocultar
+      $("nav").toggle();
     }
-</script>
+    
+    $(function() {
+      const breakpoint = 768;
+    
+      function atualizarMenu() {
+        if ($(window).width() > breakpoint) {
+          $("nav").show();
+        } else {
+          $("nav").hide();
+        }
+      }
+    
+      atualizarMenu();
+      $(window).on("resize", atualizarMenu);
+      $("nav a").on("click", function() {
+        if ($(window).width() <= breakpoint) {
+          $("nav").hide();
+        }
+      });
+    });
+    </script>
 
 </body>
 

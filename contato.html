@@ -94,6 +94,7 @@
         </p>
     </footer>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     document.getElementById('botao').onclick= function(){
         var nome = document.getElementById('nome').value;
@@ -137,11 +138,29 @@
 </script>
 <script>
     function mostrarmenu() {
-        // Alterna a exibição do menu de navegação
-        $("nav").slideToggle(); // Usa animação para exibir/ocultar
+      $("nav").toggle();
     }
-</script>
-
+    
+    $(function() {
+      const breakpoint = 768;
+    
+      function atualizarMenu() {
+        if ($(window).width() > breakpoint) {
+          $("nav").show();
+        } else {
+          $("nav").hide();
+        }
+      }
+    
+      atualizarMenu();
+      $(window).on("resize", atualizarMenu);
+      $("nav a").on("click", function() {
+        if ($(window).width() <= breakpoint) {
+          $("nav").hide();
+        }
+      });
+    });
+    </script>
 </body>
 
 </html>

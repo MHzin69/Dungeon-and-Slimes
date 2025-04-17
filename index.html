@@ -148,10 +148,30 @@
 </script>
 <script>
     function mostrarmenu() {
-        //document.querySelector('.header-nav')....
-        $("nav").toggle();
+      $("nav").toggle();
     }
-</script>
+    
+    $(function() {
+      const breakpoint = 768;
+    
+      function atualizarMenu() {
+        if ($(window).width() > breakpoint) {
+          $("nav").show();
+        } else {
+          $("nav").hide();
+        }
+      }
+    
+      atualizarMenu();
+      $(window).on("resize", atualizarMenu);
+      $("nav a").on("click", function() {
+        if ($(window).width() <= breakpoint) {
+          $("nav").hide();
+        }
+      });
+    });
+    </script>
+    
 
 </body>
 
